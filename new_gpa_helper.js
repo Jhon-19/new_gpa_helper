@@ -504,7 +504,7 @@ function add_buttons_clicking(){
 	});
 	
 	$('.user_button').eq(9).click(function(){
-		
+		window.location.href = 'https://github.com/Jhon-19/new_gpa_helper/archive/refs/heads/master.zip';
 	});
 	$('.user_button').eq(10).click(function(){
 		help_text = "新教务系统暂时查询不到未出分课程\n谢谢使用！";
