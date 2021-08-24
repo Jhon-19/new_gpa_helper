@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+	
+    "name": "WHU New GPA-Helper",
+    "description": "针对新教务系统设计, 欢迎各位同学使用！",
+    "version": "1.0.0",
+  
+    "icons": {
+		"48": "icon48.png"
+	},
+	"browser_action": {
+      "default_icon": "icon48.png"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+			"https://jwgl.whu.edu.cn/cjcx/cjcx_cxDgXscj.html?gnmkdm=N305005&layout=default&su=*"
+          ],
+          "js": ["jquery.js", "new_gpa_helper.js"],
+          "all_frames": true
+        }
+    ]
+}
